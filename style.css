@@ -1,0 +1,671 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: consolas;
+    
+}
+header{
+    background-color: rgb(117, 248, 198);
+    height: 50px;
+    box-shadow: 4px 4px 4px grey;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    z-index: 3;
+}
+
+header h1{
+    padding: 7px 9px;
+}
+
+header h1 a{
+    width: 300px;
+    height: 30px;
+    padding: 25px 9px;
+    color: blue;
+    text-decoration: none;
+    
+}
+.nav-links {
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    color: white;
+    
+}
+
+.nav-links li{
+    padding: 12px 10px;
+    position: relative;
+}
+
+.nav-links li ul{
+    position: absolute;
+    display: none;
+    
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: blue;
+    padding: 8px 14px;
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.nav-links li ul li a{
+    display: block;
+    z-index: auto;
+}
+
+
+.nav-links li:hover ul{
+    display: block;
+    background-color: rgb(26, 219, 145);
+    margin-top: 15px;
+    z-index: 2;
+    padding: 20px 5px;
+    width: 200px;
+    list-style-type: none;
+    border-radius: 5%
+    
+}
+
+.nav-links li ul:hover #first-sublink{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.nav-links li ul:hover #second-sublink{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Header Ended */
+
+
+/* The slideshow */
+@keyframes slider{
+    0%{
+        left: 0;
+
+    }
+
+    20%{
+        left: 0;
+    }
+
+    25%{
+        left: -100%;
+
+    }
+    45%{
+        left: -100%;
+    }
+
+    50%{
+        left: -200%;
+    }
+    70%{
+        left:-200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+
+    
+}
+
+#slide{
+        overflow:hidden;
+    }
+
+#slide  img{
+        width: 20%;
+        float: left;
+
+    }
+
+#slide {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 10s slider infinite;
+}
+
+
+#slide .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    visibility: visible;
+    z-index: 7;
+}
+
+/* The slideshow Ended */
+
+/* The welcome Thing and Available link started */
+
+.aside-con{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    background-color: rgb(208, 250, 229);
+    
+}
+
+
+.welcome-con{
+    flex: 2;
+    margin-left: 3em;
+    font-size: 19px;
+    
+}
+
+.welcome{
+    margin-bottom: 1.5em;
+}
+
+.vision{
+    margin-bottom: 1.5em;
+}
+
+.mission{
+    margin-bottom: 1.5em;
+}
+
+.core{
+    margin-bottom: 2em;
+}
+
+.available-links{
+    margin-left: 5em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    
+}
+
+.available-links ul li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.available-links ul li a{
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+/* The welcome Thing and Available link ended */
+
+
+/* Lastest News and our Best Students section */
+.container{
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-around;
+    height: 30em;
+    background-color: gainsboro;
+    
+    
+}
+
+.lastest{
+    width: 40%;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lastest img{
+    width: 130px;
+    height: 100px;
+}
+
+.lastest h3{
+    margin-top: .5em;
+    font-size: 2em;
+}
+
+.lastest .first-lastest{
+    display: flex;
+    
+}
+
+.first-lastest .first-text{
+    margin-left: 1.2em;
+    font-size: px;
+}
+.first-lastest .first-text a{
+    color: rgb(4, 4, 155);
+    font-size: 1.2em;
+}
+
+.lastest .second-lastest{
+    display: flex;
+    margin-top: 1.em;
+}
+
+.second-lastest .second-text{
+    margin-left: 1.2em;
+   
+}
+
+.second-lastest .second-text a{
+    color: rgb(4, 4, 155);
+    font-size: 1.2em;
+}
+
+
+
+.best{
+    width: 40%;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.best img{
+    width: 11em;
+    height: 14em;
+    margin-left: 1.2em;
+    transition: ease-in-out;
+}
+
+.best h4{
+    margin-top: .5em;
+    
+    margin-bottom: 1em;
+    margin-left: .5em;
+}
+
+.best a{
+    color: rgb(4, 4, 155);
+    font-size: 1.2em; 
+}
+
+.best-year{
+    margin-top: 1em;
+    font-weight: 650;
+    color: rgb(29, 5, 252);
+    margin-bottom: 1em;
+    margin-left: .5em;
+}
+
+/* Lastest News and our Best Students section ended */
+
+/* Sessional Teachers and Newsletter */
+
+.sessional-with-news{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.session{
+    width: auto;
+    height: auto;
+    
+}
+
+.session h3{
+    margin-bottom: 1em;
+    font-size: 1.6em;
+}
+
+.first-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.session img{
+    width: 11em;
+    height: 14em;
+    margin-left: 1em;
+}
+
+.news-letter{
+    width: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=email] {
+    border: none;
+    border-bottom: 2.5px solid purple;
+    width: 400px;
+    margin-bottom: 1em;
+    font-size: 1em;
+    color: green;
+}
+
+input[type=button]{
+    padding: 15px 28px;
+    border-radius: 10%;
+    background-color: rgb(38, 233, 158);
+    border: none;
+    box-shadow: 2px 2px 2px 2px gray;
+    width: 10em;
+    float: right;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 550;
+    color: rgb(4, 4, 172);
+}
+
+input[type=button] a{
+    width: 10em;
+}
+
+.news-letter h3{
+    margin-bottom: 1.2em;
+    font-size: 1.3em;
+}
+
+/* Sessional Teachers and Newsletter ended */
+
+/* Testimony Session */
+
+.testimony{
+    margin-top: 2em;
+    width: 90%;
+    margin: 2em auto;
+    background-color: rgb(248, 245, 245);
+}
+
+.testimony h3{
+    margin-bottom: 1em;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.testimony p{
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.first-parent h3{
+    margin-bottom: 1em;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.first-parent p{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+
+.first-parent img.parent-image{
+    max-width: 150px;
+    border-radius: 50%;
+    justify-items: center;
+    margin: 1.2em auto;
+}
+
+.parent-name h3{
+    margin-bottom: .3em;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.parent-name p{
+    margin-top: .7em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* Testimony Session ended */
+
+/* Footer Session */
+
+.foot{
+    width: 80%;
+    margin: 2em auto;
+}
+
+.foot h3 {
+    color: mediumvioletred;
+}
+
+
+button[type=submit]{
+    background-color: brown;
+    padding: 10px 12px;
+    cursor: pointer;
+    color: white;
+    border-radius: 13px;
+    border: 2px solid whitesmoke;
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px ghostwhite;
+    font-size: 20px;
+}
+button[type=submit]:hover{
+    background-color: white;
+    color: brown;
+    box-shadow: 2px 3px gainsboro;
+    font-size: 20px;
+    font-weight: 550;
+}
+.input, button, textarea{
+    max-width: 250px;
+    border-radius: 15px;
+    padding: 14px 20px;
+    font-size: 17px;
+    box-shadow: 4px 4px 4px 4px rgb(102, 92, 73);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    resize: none;
+    border: none;
+}
+form{
+    margin-top: 20px;
+    border: none;
+}
+form p,h4{
+    font-size: 18px;
+    font-weight: 550;
+    color: brown;
+}
+
+form h4{
+    font-size: 18px;
+    font-weight: 550;
+    color: fuchsia;
+   
+    
+}
+
+/* Responsive Session */
+
+@media screen and (max-width: 850px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        display: block;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+
+    .logo h1{
+        text-align: center;
+        color: blue;
+        font-size: 17px;
+        padding: 12px;
+        font-weight: 1000;
+        
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .show{
+        background: url(small.png);
+    }
+
+    .show img{
+        width: 100%;
+        height: 400px;
+    }
+
+    
+
+    .nav-links #drpdwn ul{
+        display: block;
+        width: 300px;
+        position: static;
+        align-items: center;
+        
+    }
+
+    .nav-links #drpdwn ul li a{
+        color: rgb(185, 30, 30);
+    }
+
+    li ul{
+        list-style-type: none;
+        color: white;
+    }
+    .nav-links #drpdwn:hover ul{
+        display: block;
+        position: static;
+        
+    }
+    .link ul li  {
+        color: white;
+        list-style-type: none;
+    }
+    
+    .line {
+		height: 2px;
+		width: 22px;
+		background-color: blue;
+		margin: 5px;
+	}
+	nav {
+		position: relative;
+    }
+    .ham {
+		cursor: pointer;
+		position: fixed;
+		left: 90%;
+        z-index: 3;
+        margin-top: 0;  
+       
+	}
+	.nav-links {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgb(26, 219, 145);
+        clip-path:  circle(1px at 90% -1%);
+        -webkit-clip-path: (1px at 90% -1%);
+        transition: 1s ease-in;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    
+    .nav-links.open{
+        pointer-events: all;
+        clip-path: circle(1000px at 90% -1%);
+        -webkit-clip-path: circle(1700px at 90% -1%);
+        
+    }
+
+}
+
+
+@media screen and (max-width: 1200px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        background-color: gainsboro;
+        height: auto;
+        
+    }
+
+    .lastest{
+        margin: 0 auto;
+        height: 20em;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .best{
+        width: 90%;
+        margin: 6em auto 4em auto;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .sessional-with-news{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .session{
+        margin-bottom: 1.2em;
+    }
+
+    .session h3{
+        width: 100%;
+        
+    }
+
+    input[type=email] {
+        border: none;
+        border-bottom: 2.5px solid purple;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}
+
